@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("https://images.unsplash.com/photo-1507842217343-583bb7270b66"); /* 🌅 Background image */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      background-color: rgba(102, 51, 153, 0.9); /* rebeccapurple with transparency */
+      color: white;
+      border: 3px solid #000;
+      border-radius: 25px;
+      width: 320px;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      font-weight: bold;
+      margin-bottom: 4px;
+      text-transform: capitalize;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+
+    input {
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    button {
+      background: black;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background: red;
+      transform: scale(1.05);
+    }
+
+    .register-link {
+      margin-top: 10px;
+      display: block;
+      color: #fff;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .register-link:hover {
+      text-decoration: underline;
+      color: #ffeb3b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Login Page</h1>
+    </header>
+    <form>
+      <label for="id">ID</label>
+      <input type="text" id="id" placeholder="Enter ID" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter Password" required>
+
+      <button type="submit">Login</button>
+
+      <a href="log.html" class="register-link">Don’t have an account? Register here</a>
+    </form>
+  </div>
+</body>
+</html>
